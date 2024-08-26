@@ -34,7 +34,7 @@
         /* Center the icons container and add spacing between icons */
         .icon-container {
             display: flex;
-			justify-content: center;
+            justify-content: center;
             gap: 50px; /* Adjust spacing between icons */
         }
 
@@ -128,244 +128,215 @@
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+      
+      
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Aditi Gupta</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Aditi Gupta</a>
+          <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-			 
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-			  
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/kbc-removebg-preview.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Aditi Gupta</span></h1>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+              <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+             
+              <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home-section" class="hero">
+          <div class="home-slider  owl-carousel">
+           <div class="slider-item ">
+            <div class="overlay"></div>
+             <div class="container">
+              <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/kbc-removebg-preview.png);">
+                 <div class="overlay"></div>
+                </div>
+                  <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="text">
+                        <span class="subheading">Hello!</span>
+                        <h1 class="mb-4 mt-3">I'm <span>Aditi Gupta</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+                        <!-- Element to contain animated typing -->
+                        <span id="typing-animation"></span>
 
-						<script>
+                        <script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                        // Initialize the typing animation
+                        const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  ',
-						'Frontend Developer  ',
-						'Fresher   ',
-						];
+                        // Create an array of typing text
+                        const typingTexts = [
+                        'Engineer  ',
+                        'Frontend Developer  ',
+                        'Fresher   ',
+                        ];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                        // Create a function to display the typing animation for a given text
+                        function playTypingAnimation(text) {
+                        // Loop through each character and add it to the element
+                        for (let i = 0; i < text.length; i++) {
+                            setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                            }, i * 200); // Increase the delay to slow down the typing animation
+                        }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                        // Once the animation is complete, reset the text and start over
+                        setTimeout(() => {
+                            typingAnimationElement.textContent = '';
+                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                        }, text.length * 200);
+                        }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                        // Start the typing animation loop
+                        playTypingAnimation(typingTexts[0]);
 
-						</script>
+                        </script>
 
-						<br>
-						<br>
-			            <h2>Frontend Developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href=https://github.com/Aditi-57 class="btn btn-primary py-3 px-4">My works</a></p>
-						  </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+                        <br>
+                        <br>
+                        <h2>Frontend Developer</h2>
+                        <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                        <!-- <br> -->
+                        <p><a href=https://github.com/Aditi-57 class="btn btn-primary py-3 px-4">My works</a></p>
+                          </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
     </section>
 
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/aditi.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Aditi Gupta</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Frontend Developer</span></p>
-										<p><span class="title-s">Experience: </span> <span>intern(skillcraft technology)</span></p>
-										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
-									  </div>
-									</div>
-								  </div>
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                <!-- <div class="row d-flex"> -->
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                      <div class="about-img">
+                                        <img src="images/aditi.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                                      </div>
+                                    </div>
+                                    <!-- Details next to profile image -->
+                                    <div class="col-sm-6 col-md-7">
+                                      <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Aditi Gupta</span></p>
+                                        <p><span class="title-s">Job Role: </span> <span>Frontend Developer</span></p>
+                                        <p><span class="title-s">Experience: </span> <span>intern(skillcraft technology)</span></p>
+                                        <p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+                                      </div>
+                                    </div>
+                                  </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Javascript</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>C++</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Graphic Designing</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p> I’m a passionate Front-End Developer with experience in building responsive, user-friendly web applications using Html Javascript and Tailwind CSS. Currently, I’m working on Stockify. With a strong foundation in front-end development, I’m now diving into the MERN stack to transition into a full-stack developer role. I’m eager to connect with professionals in the tech community and explore new opportunities for growth and collaboration.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Frontend Developer</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Information Technology</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span> html, CSS, Javascript, C++, &amp; Graphic Design </span></li>
-									
-								</ul>
-							</div>
-						</div>
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>SQL</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Javascript</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>C++</span> <span class="pull-right">60%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Graphic Designing</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+                                
+                                <p> I’m a passionate Front-End Developer with experience in building responsive, user-friendly web applications using Html Javascript and Tailwind CSS. Currently, I’m working on Stockify. With a strong foundation in front-end development, I’m now diving into the MERN stack to transition into a full-stack developer role. I’m eager to connect with professionals in the tech community and explore new opportunities for growth and collaboration.</p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Profile:</span> <span>Frontend Developer</span></li>
+                                    <li class="d-flex"><span>Domain:</span> <span>Information Technology</span></li>
+                                    <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                                    <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+                                    <li class="d-flex"><span>Other Skills:</span> <span> html, CSS, Javascript, C++, &amp; Graphic Design </span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
 
 
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-    		<div class="row justify-content-center pb-5">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">LinkedIn</h1>
+            <h1 class="big big-2">LinkedIn</h1>
             <h2 class="mb-4">LinkedIn</h2>
-			<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://www.linkedin.com/in/aditi-gupta-826057233/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-    			</div>
-    		</div>
-    	</div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ftco-animate">
+                    <p><a href="https://www.linkedin.com/in/aditi-gupta-826057233/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                </div>
+            </div>
+        </div>
      </div>
         </div>
 <br>
 <br>
 
 <div class="container">
-	<div class="row justify-content-center pb-5">
+    <div class="row justify-content-center pb-5">
   <div class="col-md-10 heading-section text-center ftco-animate">
-	  <h1 class="big big-2">Skills</h1>
-	<h2 class="mb-4">Skills</h2>
-	<div class="row justify-content-center mt-5">
-		<div class="col-md-6 text-center ftco-animate">
-			
-		</div>
-	</div>
+      <h1 class="big big-2">Skills</h1>
+    <h2 class="mb-4">Skills</h2>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-12 text-center ftco-animate">
+            <img src="/images/icons8-html-144.png" alt="">
+            <img src="/images/icons8-css-144.png" alt="">
+            <img src="/images/icons8-js-144.png" alt="">
+            <img src="/images/icons8-c-144.png" alt="">
+            <img src="/images/+.png" alt="">
+            <img src="/images/icons8-tailwind-css-144.png" alt="">
+            <img src="/images/icons8-react-160.png" alt="">
+            <img src="/images/icons8-mysql-144.png" alt="">
+            <img src="/images/icons8-git-144.png" alt="">
+            <img src="/images/icons8-github-192.png" alt="">
+            <img src="/images/icons8-canva-144.png" alt="">
+        </div>
+    </div>
 </div>
 </div>
-</div>
-
-<div class="icon-container">
-    <!-- HTML Icon -->
-    <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#e34c26">
-            <path d="M1.5 0l2.75 30 11.75 2.5 11.75-2.5 2.75-30h-29.25zM25.4 9.1l-0.3 3-10.1 3.4h9.6l-0.8 7.8-7.9 2.2-7.9-2.2-0.5-5.4h3.1l0.3 3.2 5 1.3 5-1.3 0.4-4h-13.4l-0.3-3 0.3-3h13.4l0.4-4h-17.7l0.5-3h21.6l-0.6 6z"/>
-        </svg>
-    </div>
-
-    <!-- CSS Icon -->
-    <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#2965f1">
-            <path d="M1.5 0h29l-2.5 28-12.5 3.5-12.5-3.5zM23.5 11h-15l0.5 3.5h14l-0.5 4.5-7 2-7-2-0.5-3.5h-3.5l1 7.5 9 2.5 9-2.5z"/>
-        </svg>
-    </div>
-
-    <!-- JavaScript Icon -->
-    <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#f7df1e">
-            <path d="M0 0v32h32v-32h-32zM18.187 26.417c-0.99 1.568-2.76 2.823-5.188 2.823-2.927 0-4.854-1.698-5.76-3.697l3.188-1.844c0.531 1.008 1.01 1.854 2.135 1.854 1.01 0 1.677-0.5 1.677-2.344v-10.802h4.948v11.354c0 3.073-1.188 4.896-3.001 5.656zM25.646 26.448c-1.01 1.562-2.615 2.844-5.385 2.844-2.854 0-4.896-1.385-5.833-3.198l3.229-1.823c0.677 1.167 1.563 2.094 3.146 2.094 1.333 0 2.229-0.667 2.229-1.583 0-1.104-0.854-1.521-2.26-2.135l-0.781-0.344c-2.26-0.979-3.76-2.177-3.76-4.74 0-2.354 1.844-4.146 4.76-4.146 2.073 0 3.573 0.719 4.656 2.604l-2.917 1.875c-0.635-1.146-1.323-1.615-2.396-1.615-1.063 0-1.74 0.677-1.74 1.615 0 1.125 0.677 1.542 2.24 2.198l0.781 0.344c2.615 1.104 4.115 2.26 4.115 4.833 0 2.76-2.115 4.323-4.948 4.323z"/>
-        </svg>
-    </div>
-
-    <!-- Tailwind CSS Icon -->
-    <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" fill="#38bdf8">
-            <path d="M128 0c-24 0-40 13.6-48 32 8-5.6 16.8-8 26.4-7.2 17.6 1.6 28.8 11.2 33.6 28.8 7.2 26.4 26.4 40 57.6 40 24 0 40-13.6 48-32-8 5.6-16.8 8-26.4 7.2-17.6-1.6-28.8-11.2-33.6-28.8-7.2-26.4-26.4-40-57.6-40zm-80 80c-24 0-40 13.6-48 32 8-5.6 16.8-8 26.4-7.2 17.6 1.6 28.8 11.2 33.6 28.8 7.2 26.4 26.4 40 57.6 40 24 0 40-13.6 48-32-8 5.6-16.8 8-26.4 7.2-17.6-1.6-28.8-11.2-33.6-28.8-7.2-26.4-26.4-40-57.6-40z"/>
-        </svg>
-    </div>
-
-    <!-- C++ Icon -->
-    <div>
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#00599c">
-            <path d="M24 0l20.78 12v24l-20.78 12-20.78-12v-24z" fill="#00599c"/>
-            <path d="M16.777 14.823l6.255-3.587v-2.07l-8.696 5.03v7.155l8.696 5.03v-2.07l-6.255-3.587v-3.27z" fill="#fff"/>
-            <path d="M30.896 28.755l2.433-1.397-3.627-2.092 3.627-2.092-2.433-1.397-3.627 2.092v-4.184h-2.803v4.184l-3.627-2.092-2.433 1.397 3.627 2.092-3.627 2.092 2.433 1.397 3.627-2.092v4.184h2.803v-4.184z" fill="#fff"/>
-        </svg>
-    </div>
 </div>
 
 <br>
@@ -373,56 +344,56 @@
 
 
 
-	
+    
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	
+        
 
-		
+        
 
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2021</span>
-    					<h2>Grade Education</h2>
-    					<span class="position">St. Xavier's High School</span>
-    					<p class="mt-4">Grade: 10th - 60%  &amp; 12th - 62% </p>
-    				</div>
-    			</div>
+        <div class="row">
+            <h1 class="big-4">Education</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2018-2021</span>
+                        <h2>Grade Education</h2>
+                        <span class="position">St. Xavier's High School</span>
+                        <p class="mt-4">Grade: 10th - 60%  &amp; 12th - 62% </p>
+                    </div>
+                </div>
 
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2021-2025</span>
-    					<h2>B.Tech</h2>
-    					<span class="position">Inderprastha Engineering College ( IPEC )</span>
-    					<p class="mt-4">Grade: 61%</p>
-    				</div>
-				</div>
-    		</div>
-			<br>
-			<br>
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-			  <div class="col-md-10 heading-section text-center ftco-animate">
-				  <h1 class="big big-2">Resume</h1>
-				<h2 class="mb-4">Resume</h2>
-				<div class="row justify-content-center mt-5">
-					<div class="col-md-6 text-center ftco-animate">
-						<p><a href=https://drive.google.com/file/d/1EQVEFiqPhHq9aRPb_CNstMpZYKSdCGg_/view?usp=sharing class="btn btn-primary py-4 px-5" download=""> Download </a></p>
-					</div>
-				</div>
-			</div>
-		 </div>
-			</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2021-2025</span>
+                        <h2>B.Tech</h2>
+                        <span class="position">Inderprastha Engineering College ( IPEC )</span>
+                        <p class="mt-4">Grade: 61%</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center pb-5">
+              <div class="col-md-10 heading-section text-center ftco-animate">
+                  <h1 class="big big-2">Resume</h1>
+                <h2 class="mb-4">Resume</h2>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-6 text-center ftco-animate">
+                        <p><a href=https://drive.google.com/file/d/1EQVEFiqPhHq9aRPb_CNstMpZYKSdCGg_/view?usp=sharing class="btn btn-primary py-4 px-5" download=""> Download </a></p>
+                    </div>
+                </div>
+            </div>
+         </div>
+            </div>
 
-    		
-    	</div>
+            
+        </div>
     </section>
 
    
@@ -438,91 +409,66 @@
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Aditi-57/Tic-Tac-Toe.git" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/Aditi-57/Tic-Tac-Toe.git" class="block-20 zoom-effect" style="background-image: url('images/proj_1\ 2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://aditi-57.github.io/Tic-Tac-Toe/">Tic Tac Toe</a></h3>
+                <p>A classic Tic Tac Toe game built using HTML, CSS, and JavaScript for a fun and interactive experience.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/Aditi-57/To-Do-List-" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                <h3 class="heading"><a href="https://aditi-57.github.io/To-Do-List-/">To Do List</a></h3>
+                <p>A simple and efficient to-do list built using HTML, CSS, and JavaScript to help organize tasks effectively.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+            <div class="blog-entry">
+              <a href="https://github.com/Aditi-57/Calculator" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="https://aditi-57.github.io/Calculator/">Calculator</a></h3>
+                <p>A basic calculator built using HTML, CSS, and JavaScript for quick and easy arithmetic operations.</p>
               </div>
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+    <br>
+      </div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/p.jpeg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h5>Turning Designs into Interactive Digital Realities </h5>
-						<br>
-						<p><a href="https://github.com/Aditi-57" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/p.jpeg)">
+            <!-- <div class="container"> -->
+                <div class="row justify-content-center">
+                    <div class="col-md-7 ftco-animate text-center">
+                        <h2>More projects on<span> Github  </span> </h2>
+                        <div class="heading"> <h5>Turning Designs into Interactive Digital Realities </h5>
+                        <br>
+                        <p><a href="https://github.com/Aditi-57" class="btn btn-primary py-3 px-5">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
 
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -532,79 +478,79 @@
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Delhi, India</p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-map-signs"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p>Delhi, India</p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://8400616408">+91 8400616408</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">Contact Number</h3>
+                <p><a href="tel://8400616408">+91 8400616408</a></p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">aditigupta2513@gmail.com</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a href="mailto:info@yoursite.com">aditigupta2513@gmail.com</a></p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1EQVEFiqPhHq9aRPb_CNstMpZYKSdCGg_/view?usp=sharing  ">resumelink</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-globe"></span>
+                </div>
+                <h3 class="mb-4">Download Resume</h3>
+                <p><a href="https://drive.google.com/file/d/1EQVEFiqPhHq9aRPb_CNstMpZYKSdCGg_/view?usp=sharing  ">resumelink</a></p>
+              </div>
           </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have any <span> Question?  </span> <a href="https://wa.me/+918400616408" class="btn btn-primary py-3 px-5">Let's Chat </a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/aditi-gupta-826057233/ "><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://t.me/+918400616408"><span class="icon-telegram"></span></a></li>
-					  <li class="ftco-animate"><a href="https://wa.me/+918400616408"><span class="icon-whatsapp"></span></a></li>
-				      <li class="ftco-animate"><a href="https://instagram.com/aditi_gupta57"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-7 ftco-animate text-center">
+                    <h2>Have any <span> Question?  </span> <a href="https://wa.me/+918400616408" class="btn btn-primary py-3 px-5">Let's Chat </a> </h2>
+                </div>
+            </div>
+                <br>
+                    <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                      <li class="ftco-animate normal-txt">Find me on  </li>
+                      
+                      <li class="ftco-animate"><a href="https://www.linkedin.com/in/aditi-gupta-826057233/ "><span class="icon-linkedin"></span></a></li>  
+                      <li class="ftco-animate"><a href="https://t.me/+918400616408"><span class="icon-telegram"></span></a></li>
+                      <li class="ftco-animate"><a href="https://wa.me/+918400616408"><span class="icon-whatsapp"></span></a></li>
+                      <li class="ftco-animate"><a href="https://instagram.com/aditi_gupta57"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                <br>
+           </div>
    </div>
  </section>
 
 
  
-	
+    
     <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    &copy;<script>document.write(new Date().getFullYear());</script> Aditi Gupta..All rights reserved.
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
   <!-- loader -->
